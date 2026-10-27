@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mlz - Loja de jogos</title>
+    <link rel="icon" type="image/png" href="img/Gemini_Generated_Image_30t9su30t9su30t9-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+        <h1>Mlz Games 👾</h1>
+        <p>Venda de jogos 🕹️</p>
+    </div>
+        <img src="img/Gemini_Generated_Image_30t9su30t9su30t9-removebg-preview.png" alt="Logo Mlz Games">
+    </header>
+    <main class = "container">
+        <div class = "titulo-secao">
+            <div>
+                <h2>Nosso catalogo</h2>
+                <p>Veja os jogos disponíveis</p>
+            </div>
+            <button id="btnCadastrar" type="button">+ Cadastrar Jogo</button>
+        </div>
+        <section id="listarJogos" class="listar-jogos">
+            <p id="mensagemVazia">Nenhum jogo cadastrado</p>
+        </section>
+    </main>
+    <dialog id = "modalCadastro">
+        <h2>Novo Jogo</h2>
+        <form id = "formJogo">
+            <label for="nome">Nome do Jogo</label>
+            <input type="text" id="nome" required>
+            <label for="criador">Empresa ou Criador</label>
+            <input type="text" id="criador" required>
+            <label for="genero">Gênero do jogo</label>
+            <input type="text" id="genero" required>
+            <label for="imagem">URL da imagem do jogo</label>
+            <input type="url" id="imagem" placeholder="https://site.com/capa.jpg" required>
+            <label for="preco">Preço (R$)</label>
+            <input type="number" id="preco" min="0.01" step="0.01"required>
+            <div class = "acoes">
+                <button type="button" id="btnCancelar" class="cancelar">Cancelar</button>
+                <button type="submit" id="btnCadastrar">Salvar Jogo</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <p>&copy; 2026 Mlz Games 🕹️ (Maycon)</p>
+</footer>
+</html>
