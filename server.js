@@ -29,7 +29,7 @@ const mostrarJogos = (req, res) => {
 const novoJogo = (req, res)=> {
     const {nome, criador, genero, imagem, preco} =req.body
     if(nome && criador && genero && imagem && preco){
-        const sql = "INSERT INTO discos (nome, criador, genero, imagem_url, preco) VALUES (?, ?, ?, ?, ?)"
+        const sql = "INSERT INTO jogos (nome, criador, genero, imagem_url, preco) VALUES (?, ?, ?, ?, ?)"
         const valores = [nome, criador, genero, imagem, preco]
 
         db.query(sql, valores,(erro, resultado)=>{

@@ -51,6 +51,7 @@ form.addEventListener("submit",async (evento)=>{
     imagem: document.getElementById("imagem").value.trim(),
     preco: Number(document.getElementById("preco").value)
     }
+    console.log("Jogo", novoJogo)
     try{
         const resposta = await fetch(API_URL + '/cadastrar',{
             method: "POST",
